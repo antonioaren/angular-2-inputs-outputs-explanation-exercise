@@ -1,0 +1,14 @@
+<h2>Carrito</h2>
+
+<div *ngIf="products.length > 0">
+  <div style="border: 1px solid black; border-radius: 10px;" *ngFor="let product of products">
+    <div>Producto: {{product.fruit}}</div>
+    <div>Cantidad:{{product.quantity}}</div>
+    <div>Precio: {{product.price}}€</div>
+  </div>
+</div>
+
+<div *ngIf="products.length == 0">
+  <h3>No hay producto añadido aún!</h3>
+</div>
+

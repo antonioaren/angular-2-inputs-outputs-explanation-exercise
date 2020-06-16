@@ -1,0 +1,22 @@
+<div>
+  <h2>Lista de frutas</h2>
+
+  <div>
+    <div>
+      <label for="">Producto</label>
+      <input [(ngModel)]="product.fruit" placeholder="producto" type="text">
+    </div>
+    <div>
+      <label for="">Cantidad</label>
+      <input [(ngModel)]="product.quantity" placeholder="cantidad"  type="number">
+    </div>
+    <div>
+      <label for="">Precio(€)</label>
+      <input [(ngModel)]="product.price" placeholder="precio" type="number">
+    </div>
+  </div>
+  <button (click)="dataFromList(product)">Add cart</button>
+
+</div>
+
+
